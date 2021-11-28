@@ -14,7 +14,7 @@ CREATE TABLE Property(
 CREATE TABLE House(
         address VARCHAR(50) NOT NULL,
         ownerName VARCHAR(30),
-        price INT
+        price INT,
         bedrooms INT,
         bathrooms INT,
         size INT,
@@ -51,7 +51,7 @@ CREATE TABLE Listings(
         address VARCHAR(50),
         agentId INT,
         mlsNumber INT PRIMARY KEY,
-        dataListed DATE,
+        dateListed DATE,
         FOREIGN KEY(agentId) REFERENCES Agent(agentId),
         FOREIGN KEY(address) REFERENCES Property(address)
 );
