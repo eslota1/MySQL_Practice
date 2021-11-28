@@ -38,13 +38,40 @@ CREATE TABLE Firm(
 );
 
 CREATE TABLE Agent(
+        agentId INT NOT NULL,
+        name VARCHAR(30),
+        phone CHAR(12),
+        firmId INT NOT NULL,
+        dateStarted DATE,
+        PRIMARY KEY(agentId),
+        FOREIGN KEY(firmId) REFERENCES Firm(id)
 );
 
 CREATE TABLE Listings(
+        address VARCHAR(50),
+        agentId INT,
+        mlsNumber INT PRIMARY KEY,
+        dataListed DATE,
+        FOREIGN KEY(agentId) REFERENCES Agent(agentId),
+        FOREIGN KEY(address) REFERENCES Property(address)
 );
 
 CREATE TABLE Buyer(
+        id INT NOT NULL,
+        name VARCHAR(30),
+        phone CHAR(12),
+        propertyType CHAR(20),
+        bedrooms INT,
+        bathrooms INT,
+        businessPropertyType CHAR(20),
+        minimumPreferredPrice INT,
+        maximumPreferredPrice INT,
+        PRIMARY KEY(id)
 );
 
 CREATE TABLE Works_With(
+        buyerId INT,
+        agentId INT,
+        FOREIGN KEY(buyerId) REFERENCES Buyer(id),
+        FOREIGN KEY(agentId) REFERENCES Agent(agentId)
 );
