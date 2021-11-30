@@ -47,7 +47,7 @@ CREATE TABLE Agent(
         FOREIGN KEY(firmId) REFERENCES Firm(id)
 );
 
-CREATE TABLE Listing(
+CREATE TABLE Listings(
         address VARCHAR(50),
         agentId INT,
         mlsNumber INT PRIMARY KEY,
@@ -77,19 +77,19 @@ CREATE TABLE Works_With(
 );
 
 -- 1
-SELECT Listing.address
-FROM House, Listing
-WHERE Listing.address = House.address;
+SELECT Listings.address
+FROM House, Listings
+WHERE Listings.address = House.address;
 
 -- 2
-SELECT Listing.address, Listing.mlsNumber
-FROM House, Listing
-WHERE Listing.address = House.address;
+SELECT Listings.address, Listings.mlsNumber
+FROM House, Listings
+WHERE Listings.address = House.address;
 
 -- 3
-SELECT Listing.address
-FROM House, Listing
-WHERE Listing.address = House.address AND House.bedrooms = 3 AND House.bathrooms = 2;
+SELECT Listings.address
+FROM House, Listings
+WHERE Listings.address = House.address AND House.bedrooms = 3 AND House.bathrooms = 2;
 
 -- 4
 -- is this right?????
@@ -110,10 +110,9 @@ FROM Agent, Firm
 WHERE Agent.firmId = Firm.id;
 
 -- 7
--- put in agentId number
 SELECT Property.*
-FROM Property, Listing
-WHERE Property.address = Listing.address AND Listing.agentId = ?;
+FROM Property, Listings
+WHERE Property.address = Listings.address AND Listings.agentId = 002;
 
 --8
 SELECT Agent.name AS "Agent Name", Buyer.name AS "Buyer Name"
@@ -131,10 +130,9 @@ WHERE Agent.agentId = Works_With.agentId AND Buyer.id = Works_With.buyerId;
 
 
 -- 10
--- put in Buyer.Id number
 SELECT House.*
 FROM House, Buyer
-WHERE Buyer.id = ? AND
+WHERE Buyer.id = 863 AND
       Buyer.bedrooms = House.bedrooms AND
       Buyer.bathrooms = House.bathrooms AND
       Buyer.minimumPreferredPrice <= House.price AND
