@@ -55,19 +55,19 @@ INSERT INTO House (address, ownerName, price, bedrooms, bathrooms, size)
 VALUES ('1798 wall street', 'Berthalemule', 150000, 7, 5, 1300);
 
 --Businesses
-INSERT INTO BusinessProperty (address, ownerName, price, businessType, size)
+INSERT INTO BusinessProperty (address, ownerName, price, type, size)
 VALUES ('1250 jefferson street', 'columbo', 324000, 'office space', 900);
 
-INSERT INTO BusinessProperty (address, ownerName, price, businessType, size)
+INSERT INTO BusinessProperty (address, ownerName, price, type, size)
 VALUES ('125 alabama way', 'obama', 400000, 'gas station', 1300);
 
-INSERT INTO BusinessProperty (address, ownerName, price, businessType, size)
+INSERT INTO BusinessProperty (address, ownerName, price, type, size)
 VALUES ('5322 shein road', 'bezos', 100000, 'store front', 1000);
 
-INSERT INTO BusinessProperty (address, ownerName, price, businessType, size)
+INSERT INTO BusinessProperty (address, ownerName, price, type, size)
 VALUES ('1895 Madalorian road', 'mando', 908734, 'store front', 950);
 
-INSERT INTO BusinessProperty (address, ownerName, price, businessType, size)
+INSERT INTO BusinessProperty (address, ownerName, price, type, size)
 VALUES ('2364 yoda lane', 'ray', 500350, 'office space',1200);
 
 --Firm
