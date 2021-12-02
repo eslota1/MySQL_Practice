@@ -21,6 +21,9 @@ VALUES ('1590 community way', 'Madi', 359000);
 INSERT INTO Property (address, ownerName, price)
 VALUES ('1798 wall street', 'Berthalemule', 150000);
 
+INSERT INTO Property (address, ownerName, price)
+VALUES ('123 lullaby street', 'Robbie', 250000);
+
 --Businesses put into Property
 
 INSERT INTO Property (address, ownerName, price)
@@ -53,6 +56,9 @@ VALUES ('1590 community way', 'Madi', 359000, 3, 2, 750);
 
 INSERT INTO House (address, ownerName, price, bedrooms, bathrooms, size)
 VALUES ('1798 wall street', 'Berthalemule', 150000, 7, 5, 1300);
+
+INSERT INTO House (address, ownerName, price, bedrooms, bathrooms, size)
+VALUES ('123 lullaby street', 'Robbie', 250000, 5, 4, 700);
 
 --Businesses
 INSERT INTO BusinessProperty (address, ownerName, price, type, size)
@@ -136,10 +142,10 @@ INSERT INTO Buyer(id, name, phone, propertyType, bedrooms, bathrooms, businessPr
 VALUES(436, 'rick', '362-669-4596', 'House', 2, 2, NULL , 400000, 200000);
 
 INSERT INTO Buyer(id, name, phone, propertyType, bedrooms, bathrooms, businessPropertyType, maximumPreferredPrice, minimumPreferredPrice)
-VALUES(007, 'morty', '336-402-7732', 'Bussiness', NULL, NULL, 'office space' , 40000, 500000);
+VALUES(007, 'morty', '336-402-7732', 'Business', NULL, NULL, 'office space' , 40000, 500000);
 
 INSERT INTO Buyer(id, name, phone, propertyType, bedrooms, bathrooms, businessPropertyType, maximumPreferredPrice, minimumPreferredPrice)
-VALUES(543, 'summer', '366-896-7854', 'Bussiness', NULL, NULL, 'gas station' , 450000, 250000);
+VALUES(543, 'summer', '366-896-7854', 'Business', NULL, NULL, 'gas station' , 450000, 250000);
 
 --Works with
 INSERT INTO Works_With(buyerId, agentId)
