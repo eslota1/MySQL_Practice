@@ -126,19 +126,19 @@ VALUES ('5322 shein road', 854, 9231, '2021-01-03');
 
 
 --Buyer
-INSERT INTO Buyer(id, name, phone, propertyType, bedrooms, bathrooms, businessPropertyType, maximumPreferredPrice, minimumPreferredPrice)
+INSERT INTO Buyer(id, name, phone, propertyType, bedrooms, bathrooms, type, maximumPreferredPrice, minimumPreferredPrice)
 VALUES(112, 'brock', '954-566-3265', 'House', 3, 2, NULL , 500000, 150000);
 
-INSERT INTO Buyer(id, name, phone, propertyType, bedrooms, bathrooms, businessPropertyType, maximumPreferredPrice, minimumPreferredPrice)
+INSERT INTO Buyer(id, name, phone, propertyType, bedrooms, bathrooms, type, maximumPreferredPrice, minimumPreferredPrice)
 VALUES(863, 'melina', '500-986-3265', 'House', 5, 4, NULL , 300000, 200000);
 
-INSERT INTO Buyer(id, name, phone, propertyType, bedrooms, bathrooms, businessPropertyType, maximumPreferredPrice, minimumPreferredPrice)
+INSERT INTO Buyer(id, name, phone, propertyType, bedrooms, bathrooms, type, maximumPreferredPrice, minimumPreferredPrice)
 VALUES(436, 'rick', '362-669-4596', 'House', 2, 2, NULL , 400000, 200000);
 
-INSERT INTO Buyer(id, name, phone, propertyType, bedrooms, bathrooms, businessPropertyType, maximumPreferredPrice, minimumPreferredPrice)
+INSERT INTO Buyer(id, name, phone, propertyType, bedrooms, bathrooms, type, maximumPreferredPrice, minimumPreferredPrice)
 VALUES(007, 'morty', '336-402-7732', 'Bussiness', NULL, NULL, 'office space' , 40000, 500000);
 
-INSERT INTO Buyer(id, name, phone, propertyType, bedrooms, bathrooms, businessPropertyType, maximumPreferredPrice, minimumPreferredPrice)
+INSERT INTO Buyer(id, name, phone, propertyType, bedrooms, bathrooms, type, maximumPreferredPrice, minimumPreferredPrice)
 VALUES(543, 'summer', '366-896-7854', 'Bussiness', NULL, NULL, 'gas station' , 450000, 250000);
 
 --Works with
